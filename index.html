@@ -29,37 +29,86 @@
     <header>
       <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler d-flex" type="button" data-bs-toggle="collapse"
+          <a class="navbar-brand" href="index.html">Navbar</a>
+          <button class="navbar-toggler d-flex ms-auto" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
       </nav>
+      <div class="collapse" id="navbarSupportedContent" data-bs-theme="dark">
+        <div class="bg-dark p-4">
+          <div class="d-flex flex-column flex-lg-row gap-2">
+            <a class="btn btn-outline-light" href="index.html" role="button">Tela inicial</a>
+            <a class="btn btn-outline-light" href="contador.html" role="button">Contador</a>
+            <a class="btn btn-outline-light" href="seletor_de_cor.html" role="button">Seletor de cor</a>
+            <a class="btn btn-outline-light" href="to-do-list.html" role="button">To-Do List</a>
+          </div>
+        </div>
+      </div>
     </header>
 
-    <main class="d-flex flex-column flex-grow-1 justify-content-center align-items-center bg-light">
-      <div class="container-fluid text-center">
-        <h1 class="fw-bold mb-1">Contador</h1>
-        <h4 class="text-muted">Utilize os botões abaixo para registrar uma contagem.</h4>
-
-        <div class="d-flex flex-column flex-md-row-reverse gap-2 justify-content-center mt-4">
-          <button class="btn btn-success d-flex align-items-center justify-content-center gap-2">
-            <i class="bi bi-plus-circle"></i>
-            <span>1</span>
-          </button>
-          <button class="btn btn-danger d-flex align-items-center justify-content-center gap-2">
-            <i class="bi bi-dash-circle"></i>
-            <span>1</span>
-          </button>
+    <main class="flex-grow-1 bg-light">
+      <section class="container py-5">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-12 col-lg-8">
+            <span class="badge text-bg-primary mb-3">Tela inicial</span>
+            <h1 class="display-5 fw-bold mb-3">Minhas ferramentas</h1>
+            <p class="fs-5 text-secondary mb-0">
+              Esta &eacute; a tela inicial. Escolha uma das op&ccedil;&otilde;es abaixo para acessar as atividades.
+            </p>
+          </div>
         </div>
-        <h1 class="fs-1 fw-bold mt-3">0</h1>
-      </div>
+
+        <div class="row g-4 justify-content-center">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body text-center p-4">
+                <div class="bg-success bg-opacity-10 text-success rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                  style="width: 64px; height: 64px;">
+                  <i class="bi bi-plus-slash-minus fs-2"></i>
+                </div>
+                <h2 class="h5 fw-bold">Contador</h2>
+                <p class="text-secondary">Registre uma contagem com bot&otilde;es de incremento e decremento.</p>
+                <a class="btn btn-success" href="contador.html" role="button">Abrir contador</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body text-center p-4">
+                <div class="bg-primary bg-opacity-10 text-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                  style="width: 64px; height: 64px;">
+                  <i class="bi bi-palette-fill fs-2"></i>
+                </div>
+                <h2 class="h5 fw-bold">Seletor de cor</h2>
+                <p class="text-secondary">Digite o nome ou c&oacute;digo hexadecimal de uma cor e visualize o fundo.</p>
+                <a class="btn btn-primary" href="seletor_de_cor.html" role="button">Abrir seletor</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body text-center p-4">
+                <div class="bg-danger bg-opacity-10 text-danger rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                  style="width: 64px; height: 64px;">
+                  <i class="bi bi-list-check fs-2"></i>
+                </div>
+                <h2 class="h5 fw-bold">To-Do List</h2>
+                <p class="text-secondary">Veja a interface da lista de tarefas com campos, a&ccedil;&otilde;es e controles.</p>
+                <a class="btn btn-danger" href="to-do-list.html" role="button">Abrir lista</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="text-center p-2 bg-secondary bg-opacity-50 fst-italic text-black text-opacity-50">
-      Copyright © 2026 Michel Manzato Tebar UTFPR
+      Copyright &copy; 2026 Michel Manzato Tebar UTFPR
     </footer>
 
   </div>
